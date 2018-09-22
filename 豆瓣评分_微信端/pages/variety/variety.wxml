@@ -1,0 +1,47 @@
+<!--pages/variety/variety.wxml-->
+<view class="container">
+  <!-- 搜索 -->
+  <view class="search">
+    <view class="search_input">
+      <view>
+        <image style="width:30rpx;height:30rpx;margin-right:10rpx;" src="../../imgs/search.png"></image>
+      </view>
+      <view style="color:#a3a3a3;font-size:30rpx;">搜索</view>
+    </view>
+  </view>
+
+  <view wx:key='key' wx:for-index="id" wx:for="{{motto}}">
+    <view wx:if='{{id%3==0}}'>
+      <view class="movie_item">
+        <view class="movie">
+           <navigator url="../film_details_recent_release/film_details_recent_release?title={{motto[id].title}}&imgs={{motto[id].images.small}}&directors={{motto[id].directors[0].name}}&genres={{motto[id].genres}}&rating={{motto[id].rating.average}}&casts0={{motto[id].casts[0].name}}&casts1={{motto[id].casts[1].name}}&casts2={{motto[id].casts[2].name}}&year={{motto[id].year}}"  open-type="navigateTo"> <image class="imgs" src='{{motto[id].images.small}}'></image></navigator>
+          <view class="movie_name">{{motto[id].title}}</view>
+          <view class="movie_score">
+            <image style='width:100rpx;height:20rpx;' src="../../imgs/score.png"></image>
+            <view class="score">{{motto[id].rating.average}}</view>
+          </view>
+        </view>
+        <view wx:if='{{motto[id+1]!=null}}' class="movie">
+          <navigator url="../film_details_recent_release/film_details_recent_release?title={{motto[id+1].title}}&imgs={{motto[id+1].images.small}}&directors={{motto[id+1].directors[0].name}}&genres={{motto[id+1].genres}}&rating={{motto[id+1].rating.average}}&casts0={{motto[id+1].casts[0].name}}&casts1={{motto[id+1].casts[1].name}}&casts2={{motto[id+1].casts[2].name}}&year={{motto[id+1].year}}"  open-type="navigateTo"> <image class="imgs" src='{{motto[id+1].images.small}}'></image></navigator>
+          <view class="movie_name">{{motto[id+1].title}}</view>
+          <view class="movie_score">
+            <image  wx:if='{{motto[id+1]!=null}}' style='width:100rpx;height:20rpx;' src="../../imgs/score.png"></image>
+            <view class="score">{{motto[id+1].rating.average}}</view>
+          </view>
+        </view>
+        <view  class="movie">
+          <navigator url="../film_details_recent_release/film_details_recent_release?title={{motto[id+2].title}}&imgs={{motto[id+2].images.small}}&directors={{motto[id+2].directors[0].name}}&genres={{motto[id+2].genres}}&rating={{motto[id+2].rating.average}}&casts0={{motto[id+2].casts[0].name}}&casts1={{motto[id+2].casts[1].name}}&casts2={{motto[id+2].casts[2].name}}&year={{motto[id+2].year}}"  open-type="navigateTo"> <image class="imgs" src='{{motto[id+2].images.small}}'></image></navigator>
+          <view class="movie_name">{{motto[id+2].title}}</view>
+          <view class="movie_score">
+            <image wx:if='{{motto[id+2]!=null}}'  style='width:100rpx;height:20rpx;' src="../../imgs/score.png"></image>
+            <view class="score">{{motto[id+2].rating.average}}</view>
+          </view>
+        </view>
+      </view>
+    </view>
+
+
+
+  </view>
+
+</view>

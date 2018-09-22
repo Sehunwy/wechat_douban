@@ -1,0 +1,128 @@
+/* pages/film_details_recent_release/film_details_recent_release.wxss */
+
+.container {
+  width: 750rpx;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.bac {
+  z-index: -1;
+  width: 730rpx;
+  height: 1000rpx;
+  margin-left: 10rpx;
+  top: 0rpx;
+  position: absolute;
+}
+
+.front {
+  /* z-index: 10; *//* position: absolute; */
+}
+
+.trans {
+  /* z-index: 1; */
+  width: 750rpx;
+  height: 375rpx;
+  background-color: #000;
+  opacity: 0.5;
+  margin-top: -198rpx;
+  /* position: absolute; */
+}
+
+.white {
+  width: 750rpx;
+  height: 1000rpx;
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+}
+
+/* .movie {
+  display: flex;
+  flex-direction: row;
+} */
+
+/* .poster {
+  margin-top: 160rpx;
+  position: absolute;
+ opacity: 1;
+} */
+
+.details {
+  display: flex;
+  flex-direction: row;
+  z-index: 1;
+}
+
+.poster {
+  margin-top: -220rpx;
+  margin-left: 40rpx;
+  border: 1px solid #fff;
+}
+
+.movie {
+  margin-top: -200rpx;
+  margin-left: 20rpx;
+  color: #fff;
+}
+
+.score {
+  display: flex;
+  flex-direction: row;
+  margin-top: 20rpx;
+}
+
+.view {
+  margin-left: 10rpx;
+  margin-top: -10rpx;
+}
+
+.infor {
+  font-size: 30rpx;
+  margin-left: 40rpx;
+  margin-top: 30rpx;
+  width: 670rpx;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.information {
+  margin-bottom: 10rpx;
+}
+
+.want {
+  display: flex;
+  flex-direction: row;
+  margin-right: 40rpx;
+  margin-left: 40rpx;
+  justify-content: space-between;
+  color: #ddb67b;
+  font-size: 30rpx;
+  margin-top: 40rpx;
+}
+
+.watch {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 315rpx;
+  height: 55rpx;
+  border-radius: 10rpx;
+  border: 1px solid #ddb67b;
+}
+
+.introduction {
+  display: flex;
+  flex-direction: column;
+  margin-right: 40rpx;
+  margin-left: 40rpx;
+  margin-top: 40rpx;
+  font-size: 30rpx;
+}
+
+.jj {
+  color: #c9c9c9;
+  margin-bottom: 20rpx;
+}

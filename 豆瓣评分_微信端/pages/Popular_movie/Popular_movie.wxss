@@ -1,0 +1,69 @@
+/* pages/Popular_movie/Popular_movie.wxss */
+.container {
+  display: flex;
+  flex-direction: column;
+  width: 750rpx;
+}
+
+.search {
+  display: flex;
+  align-items: center;
+  width: 750rpx;
+  height: 80rpx;
+  margin-top: -198rpx;
+  background-color: #43be53;
+  margin-bottom: 25rpx;
+}
+
+.search_input {
+  display: flex;
+  justify-content: center;
+  width: 690rpx;
+  height: 50rpx;
+  border-radius: 5rpx;
+  margin-left: 30rpx;
+  background-color: #fff;
+}
+
+.movie_item {
+  display: flex;
+  flex-direction: row;
+  width: 680rpx;
+  height: 360rpx;
+  justify-content: space-between;
+  padding-left: 35rpx;
+  padding-right: 35rpx;
+  margin-top: 10rpx;
+}
+
+.movie {
+  display: inline-flex;
+  flex-direction: column;
+  width: 188rpx;
+  /* margin-right: 30rpx; */
+}
+
+.imgs {
+  width: 188rpx;
+  height: 265rpx;
+}
+
+.movie_name {
+  font-size: 30rpx;
+  margin-top: 10rpx;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.movie_score {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.score {
+  font-size: 28rpx;
+  color: #a3a3a3;
+  margin-left: 10rpx;
+}

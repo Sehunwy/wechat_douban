@@ -1,0 +1,49 @@
+<!--pages/film_details_recent_release/film_details_recent_release.wxml-->
+<view class="container">
+  <view>
+    <view class="front">
+      <view class="trans">
+
+      </view>
+      <view class="white">
+        <view class="details">
+          <view class="poster">
+            <image style="width:188rpx;height:265rpx;" src='{{imgs}}'></image>
+          </view>
+          <view class="movie">
+            <view>{{title}}</view>
+            <view class="score">
+              <view style='font-size:60rpx;'>{{rating}}</view>
+              <view class="view">
+                <view>
+                  <image style='width:100rpx;height:20rpx;' src="../../imgs/score.png"></image>
+                </view>
+                <view style="font-size:24rpx;color:#9d9c9a;">1111人评价</view>
+              </view>
+            </view>
+          </view>
+        </view>
+        <view class="infor">
+          <view class="information">134分钟 {{genres}} <view wx:for-item="itemName" wc:for="genres">{{itemName}}</view> </view>
+          <view class="information">{{year}} （中国大陆）上映 中国大陆</view>
+          <view>{{directors}}（导演）/ {{casts0}} / {{casts1}} / {{casts2}}</view>
+        </view>
+        <view class="want">
+          <view class="watch">想看</view>
+          <view class="watch">看过</view>
+        </view>
+        <view class="introduction">
+          <view class="jj">{{title}}的剧情简介</view>
+          <view class="introduction_details">
+          {{title}}
+            
+          </view>
+        </view>
+      </view>
+    </view>
+    <view class="bac">
+      <image style="width: 730rpx;height: 1000rpx;" src="{{imgs}}"></image>
+    </view>
+
+  </view>
+</view>

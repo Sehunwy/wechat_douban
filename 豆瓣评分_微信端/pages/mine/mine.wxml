@@ -1,0 +1,12 @@
+<!--pages/mine/mine.wxml-->
+<view class="container">
+  <image style="width:750rpx;height:415rpx" src="../../imgs/login.png">
+  </image>
+  <view class="login">
+    <view>
+      <image style="width:38rpx;height:28rpx" src="../../imgs/login_icon.png"></image>
+    </view>
+
+    <view class="text">登录</view>
+  </view>
+</view>

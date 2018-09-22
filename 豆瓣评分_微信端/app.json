@@ -1,0 +1,43 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/film_details_recent_release/film_details_recent_release",
+    "pages/variety/variety",
+    "pages/TV_series/TV_series",
+    "pages/Popular_movie/Popular_movie",
+    "pages/mine/mine",
+    "pages/recent_release/recent_release",
+    "pages/index1/index1",
+    "pages/logs/logs"
+  ],
+  "tabBar": {
+    "color": "#a3a3a3",
+    "selectedColor": "#43be53",
+    "backgroundColor": "#ffffff",
+    "borderStyle": "black",
+    "list": [
+      {
+        "selectedIconPath": "imgs/movie_active.png",
+        "iconPath": "imgs/movie.png",
+        "pagePath": "pages/index/index",
+        "text": "电影"
+      },
+      {
+        "selectedIconPath": "imgs/mine_active.png",
+        "iconPath": "imgs/mine.png",
+        "pagePath": "pages/mine/mine",
+        "text": "我的"
+      }
+    ]
+  },
+  "networkTimeout": {
+    "request": 10000,
+    "downloadFile": 10000
+  },
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#43be53",
+    "navigationBarTitleText": "豆瓣评分",
+    "navigationBarTextStyle": "#ffffff"
+  }
+}

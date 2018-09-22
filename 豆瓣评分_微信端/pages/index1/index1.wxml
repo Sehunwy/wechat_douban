@@ -1,0 +1,133 @@
+
+<!--index.wxml-->
+<view class="container">
+  <!-- 搜索 -->
+  <view class="search">
+    <view class="search_input">
+      <view>
+        <image style="width:30rpx;height:30rpx;margin-right:10rpx;" src="../../imgs/search.png"></image>
+      </view>
+      <view style="color:#a3a3a3;font-size:30rpx;">搜索</view>
+    </view>
+  </view>
+
+  <!-- 近期上映 -->
+  <view class="main">
+    <view class="main_top">
+      <view class="front">
+        <view class="Bold_lines"></view>
+        <view class="front_word">近期上映</view>
+      </view>
+      <view class="more">
+        <view>更多</view>
+        <image style="width:24rpx;height:24rpx;margin-left:10rpx;margin-right:30rpx;" src="../../imgs/arrow.png"></image>
+      </view>
+    </view>
+    <swiper class="movie_bottom">
+      <block  wx:for="{{imgUrls}}" wx:key="index">
+
+        <swiper-item class="item">
+          <view class="movie">
+            <image class="imgs" src="../../imgs/test.jpg"></image>
+            <view class="movie_name">一出好戏</view>
+            <view class="movie_score">
+              <image style='width:100rpx;height:20rpx;' src='../../imgs/score.png'></image>
+              <view class="score">7.4</view>
+            </view>
+          </view>
+
+           <view class="movie">
+            <image class="imgs" src="../../imgs/test.jpg"></image>
+            <view class="movie_name">一出好戏</view>
+            <view class="movie_score">
+              <image style='width:100rpx;height:20rpx;' src='../../imgs/score.png'></image>
+              <view class="score">7.4</view>
+            </view>
+          </view>
+
+           <view class="movie">
+            <image class="imgs" src="../../imgs/test.jpg"></image>
+            <view class="movie_name">一出好戏</view>
+            <view class="movie_score">
+              <image style='width:100rpx;height:20rpx;' src='../../imgs/score.png'></image>
+              <view class="score">7.4</view>
+            </view>
+          </view>
+
+          <view class="movie">
+            <image class="imgs" src="../../imgs/test.jpg"></image>
+            <view class="movie_name">一出好戏</view>
+            <view class="movie_score">
+              <image style='width:100rpx;height:20rpx;' src='../../imgs/score.png'></image>
+              <view class="score">7.4</view>
+            </view>
+          </view>   
+
+        </swiper-item>
+        
+        
+      </block>
+      <!-- 电影信息 -->
+      <!-- <view class="main_bottom">
+        <view class="movie">
+          <image class="imgs" src="../../imgs/test.jpg"></image>
+          <view class="movie_name">一出好戏</view>
+          <view class="movie_score">
+            <image style='width:100rpx;height:20rpx;' src='../../imgs/score.png'></image>
+            <view class="score">7.4</view>
+          </view>
+
+        </view>
+      </view>
+       <!-- 电影信息 -->
+      <!-- <view class="main_bottom">
+        <view class="movie">
+          <image class="imgs" src="../../imgs/test.jpg"></image>
+          <view class="movie_name">一出好戏</view>
+          <view class="movie_score">
+            <image style='width:100rpx;height:20rpx;' src='../../imgs/score.png'></image>
+            <view class="score">7.4</view>
+          </view>
+
+        </view>
+      </view> -->
+      <!-- 电影信息 -->
+      <!-- <view class="main_bottom">
+        <view class="movie">
+          <image class="imgs" src="../../imgs/test.jpg"></image>
+          <view class="movie_name">一出好戏</view>
+          <view class="movie_score">
+            <image style='width:100rpx;height:20rpx;' src='../../imgs/score.png'></image>
+            <view class="score">7.4</view>
+          </view>
+
+        </view>
+      </view> -->
+      <!-- 电影信息 -->
+      <!-- <view class="main_bottom">
+        <view class="movie">
+          <image class="imgs" src="../../imgs/test.jpg"></image>
+          <view class="movie_name">一出好戏</view>
+          <view class="movie_score">
+            <image style='width:100rpx;height:20rpx;' src='../../imgs/score.png'></image>
+            <view class="score">7.4</view>
+          </view>
+
+        </view>
+      </view> -->
+      <!-- 电影信息 -->
+      <!-- <view class="main_bottom">
+        <view class="movie">
+          <image class="imgs" src="../../imgs/test.jpg"></image>
+          <view class="movie_name">一出好戏</view>
+          <view class="movie_score">
+            <image style='width:100rpx;height:20rpx;' src='../../imgs/score.png'></image>
+            <view class="score">7.4</view>
+          </view>
+
+        </view>
+      </view> -->-->
+    </swiper>
+
+  </view>
+</view>

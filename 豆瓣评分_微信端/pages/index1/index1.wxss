@@ -1,0 +1,107 @@
+/**index.wxss**/
+.container {
+  display: flex;
+  flex-direction: column;
+}
+
+.search {
+  display: flex;
+  align-items: center;
+  width: 750rpx;
+  height: 80rpx;
+  margin-top: -198rpx;
+  background-color: #43be53;
+}
+
+.search_input {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: 690rpx;
+  height: 50rpx;
+  border-radius: 5rpx;
+  margin-left: 30rpx;
+  background-color: #fff;
+}
+
+
+.main {
+  display: flex;
+  flex-direction: column;
+  height: 470rpx;
+  width: 750rpx;
+}
+
+.main_top {
+  display: flex;
+  flex-direction: row;  
+  align-items: center;
+  justify-content: space-between;
+  height: 100rpx;
+}
+
+.front {
+  display: flex;
+  flex-direction: row;  
+  align-items: center;
+}
+
+.Bold_lines {
+ width: 5rpx;
+ height: 30rpx;
+ background-color: #43be53;
+ margin-right: 25rpx;
+}
+
+.front_word {
+  font-size: 32rpx;
+  font-weight: bold;
+}
+
+.more {
+  display: flex;
+  flex-direction: row;  
+  align-items: center;
+  font-size: 30rpx;
+  color: #43be53;
+ 
+}
+
+.movie {
+  display: inline-flex;
+  flex-direction: column; 
+   width: 188rpx;
+   margin-right: 30rpx;
+}
+
+.inline-flex {
+  display:inline-flex;
+}
+
+.imgs {
+  width: 188rpx;
+  height: 265rpx;
+  
+  }
+
+  .movie_name {
+    font-size: 30rpx;
+    margin-top: 10rpx;
+  }
+
+  .movie_score {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .score {
+    font-size: 28rpx;
+    color: #a3a3a3;
+    margin-left: 10rpx;
+  }
+
+.item {
+  display: inline-flex;
+}

@@ -1,0 +1,139 @@
+<!--index.wxml-->
+<view class="container">
+  <!-- 搜索 -->
+  <view class="search">
+    <view class="search_input">
+      <view>
+        <image style="width:30rpx;height:30rpx;margin-right:10rpx;" src="../../imgs/search.png"></image>
+      </view>
+      <view style="color:#a3a3a3;font-size:30rpx;">搜索</view>
+    </view>
+  </view>
+
+  <!-- 近期上映 -->
+  <view class="main">
+    <view class="main_top">
+      <view class="front">
+        <view class="Bold_lines"></view>
+        <view class="front_word">近期上映</view>
+      </view>
+      <view class="more">
+        <navigator url="../recent_release/recent_release"  open-type="navigateTo">更多</navigator>
+        <image style="width:24rpx;height:24rpx;margin-left:10rpx;margin-right:30rpx;" src="../../imgs/arrow.png"></image>
+      </view>
+    </view>
+
+    <scroll-view class="scroll_x" scroll-x="true" scroll-with-animation="true">
+      <!--  display: inline-block-->
+      <!-- {{itemName.title}} -->
+      <view style='display:inline-block' wx:key='key' wx:for-index="id" wx:for-item="itemName" wx:for="{{motto}}">
+        <view class="movie_bottom" wx:if='{{id<7}}'>
+          <view class="movie">
+            <navigator url="../film_details_recent_release/film_details_recent_release?title={{itemName.title}}&imgs={{itemName.images.small}}&directors={{itemName.directors[0].name}}&genres={{itemName.genres}}&rating={{itemName.rating.average}}&casts0={{itemName.casts[0].name}}&casts1={{itemName.casts[1].name}}&casts2={{itemName.casts[2].name}}&year={{itemName.year}}"  open-type="navigateTo"> <image class="imgs" src='{{itemName.images.small}}'></image></navigator>
+           
+            <view class="movie_name">{{itemName.title}}</view>
+            <view class="movie_score">
+              <image style='width:100rpx;height:20rpx;' src='../../imgs/score.png'></image>
+              <view class="score">{{itemName.rating.average}}</view>
+            </view>
+          </view>
+        </view>
+      </view>
+    </scroll-view>
+  </view>
+
+  <!-- 热门电影 -->
+  <view class="main">
+    <view class="main_top">
+      <view class="front">
+        <view class="Bold_lines"></view>
+        <view class="front_word">热门电影</view>
+      </view>
+      <view class="more">
+        <navigator  url="../Popular_movie/Popular_movie"  open-type="navigateTo">更多</navigator>
+        <image style="width:24rpx;height:24rpx;margin-left:10rpx;margin-right:30rpx;" src="../../imgs/arrow.png"></image>
+      </view>
+    </view>
+
+    <scroll-view class="scroll_x" scroll-x="true" scroll-with-animation="true">
+      <!--  display: inline-block-->
+      <!-- {{itemName.title}} -->
+      <view style='display:inline-block' wx:key='key' wx:for-index="id" wx:for-item="itemName" wx:for="{{top}}">
+        <view class="movie_bottom" wx:if='{{id<7}}'>
+          <view class="movie">
+            <navigator url="../film_details_recent_release/film_details_recent_release?title={{itemName.title}}&imgs={{itemName.images.small}}&directors={{itemName.directors[0].name}}&genres={{itemName.genres}}&rating={{itemName.rating.average}}&casts0={{itemName.casts[0].name}}&casts1={{itemName.casts[1].name}}&casts2={{itemName.casts[2].name}}&year={{itemName.year}}"  open-type="navigateTo"> <image class="imgs" src='{{itemName.images.small}}'></image></navigator>
+           
+            <view class="movie_name">{{itemName.title}}</view>
+            <view class="movie_score">
+              <image style='width:100rpx;height:20rpx;' src='../../imgs/score.png'></image>
+              <view class="score">{{itemName.rating.average}}</view>
+            </view>
+          </view>
+        </view>
+      </view>
+    </scroll-view>
+  </view>
+
+  <!-- 电视剧 -->
+  <view class="main">
+    <view class="main_top">
+      <view class="front">
+        <view class="Bold_lines"></view>
+        <view class="front_word">电视剧</view>
+      </view>
+      <view class="more">
+        <navigator  url="../TV_series/TV_series"  open-type="navigateTo">更多</navigator>
+        <image style="width:24rpx;height:24rpx;margin-left:10rpx;margin-right:30rpx;" src="../../imgs/arrow.png"></image>
+      </view>
+    </view>
+
+    <scroll-view class="scroll_x" scroll-x="true" scroll-with-animation="true">
+      <!--  display: inline-block-->
+      <!-- {{itemName.title}} -->
+      <view style='display:inline-block' wx:key='key' wx:for-index="id" wx:for-item="itemName" wx:for="{{us_box}}">
+        <view class="movie_bottom" wx:if='{{id<7}}'>
+          <view class="movie">
+             <navigator url="../film_details_recent_release/film_details_recent_release?title={{itemName.subject.title}}&imgs={{itemName.subject.images.small}}&directors={{itemName.subject.directors[0].name}}&genres={{itemName.subject.genres}}&rating={{itemName.subject.rating.average}}&casts0={{itemName.subject.casts[0].name}}&casts1={{itemName.subject.casts[1].name}}&casts2={{itemName.subject.casts[2].name}}&year={{itemName.subject.year}}"  open-type="navigateTo"> <image class="imgs" src='{{itemName.subject.images.small}}'></image></navigator>
+            <view class="movie_name">{{itemName.subject.title}}</view>
+            <view class="movie_score">
+              <image style='width:100rpx;height:20rpx;' src='../../imgs/score.png'></image>
+              <view class="score">{{itemName.subject.rating.average}}</view>
+            </view>
+          </view>
+        </view>
+      </view>
+    </scroll-view>
+  </view>
+
+  <!-- 综艺 -->
+  <view class="main">
+    <view class="main_top">
+      <view class="front">
+        <view class="Bold_lines"></view>
+        <view class="front_word">综艺</view>
+      </view>
+      <view class="more">
+        <navigator url="../variety/variety"  open-type="navigateTo">更多</navigator>
+        <image style="width:24rpx;height:24rpx;margin-left:10rpx;margin-right:30rpx;" src="../../imgs/arrow.png"></image>
+      </view>
+    </view>
+
+    <scroll-view class="scroll_x" scroll-x="true" scroll-with-animation="true">
+      <!--  display: inline-block-->
+      <!-- {{itemName.title}} -->
+      <view style='display:inline-block' wx:key='key' wx:for-index="id" wx:for-item="itemName" wx:for="{{coming_soon}}">
+        <view class="movie_bottom" wx:if='{{id<7}}'>
+          <view class="movie">
+             <navigator url="../film_details_recent_release/film_details_recent_release?title={{itemName.title}}&imgs={{itemName.images.small}}&directors={{itemName.directors[0].name}}&genres={{itemName.genres}}&rating={{itemName.rating.average}}&casts0={{itemName.casts[0].name}}&casts1={{itemName.casts[1].name}}&casts2={{itemName.casts[2].name}}&year={{itemName.year}}"  open-type="navigateTo"> <image class="imgs" src='{{itemName.images.small}}'></image></navigator>
+            <view class="movie_name">{{itemName.title}}</view>
+            <view class="movie_score">
+              <image style='width:100rpx;height:20rpx;' src='../../imgs/score.png'></image>
+              <view class="score">{{itemName.rating.average}}</view>
+            </view>
+          </view>
+        </view>
+      </view>
+    </scroll-view>
+  </view>
+
+</view>
